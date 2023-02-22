@@ -1,29 +1,28 @@
 <template>
   <div class="about">
     <h1>This is an about page</h1>
-    {{data}}
+    {{ data }}
   </div>
 </template>
 
 <script>
-export default{
-  data(){
-    return{
-      data:{}
-    }
+export default {
+  data() {
+    return {
+      data: {},
+    };
   },
-  mounted(){
+  mounted() {
     console.log(import.meta.env.VITE_TEXT); // 印出 這是開發中的環境
     // console.log(import.meta.env.VITE_PATH); // 印出 https://randomuser.me/api/
     const url = import.meta.env.VITE_PATH;
     // this.$http.get('https://randomuser.me/api/')
-    this.$http.get(url)
-    .then((res)=>{
+    this.$http.get(url).then((res) => {
       console.log(res);
-      this.data=res.data.results[0];
+      this.data = res.data.results[0];
       console.log(this.data);
-    })
-  }
+    });
+  },
 };
 </script>
 
