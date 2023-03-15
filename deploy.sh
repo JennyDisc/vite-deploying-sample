@@ -29,6 +29,6 @@ git commit -m 'deploy'
 
 # 2.部屬到GitHub Pages。老師建議使用這個
 # if you are deploying to https://jennydisc.github.io/vite-deploying-sample
-git push -f https://github.com:jennydisc/vite-deploying-sample.git main:gh-pages
+git push -f https://github.com/JennyDisc/vite-deploying-sample.git main:gh-pages
 
 cd -

@@ -1,10 +1,15 @@
-<script setup>
-defineProps({
-  msg: {
-    type: String,
-    required: true
-  }
-})
+<!-- <script setup> -->
+<script>
+// defineProps({
+//   msg: {
+//     type: String,
+//     required: true,
+//   },
+// });
+
+export default {
+  props: ["msg"],
+};
 </script>
 
 <template>
